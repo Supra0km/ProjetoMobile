@@ -1,5 +1,5 @@
 import { View } from 'react-native'
-import { styles } from '../Marker/styles'
+import { styles } from './styles'
 
 export function Marker() {
     return (
