@@ -9,3 +9,7 @@ export const styles = StyleSheet.create({
         borderRadius: 15
     }
 })
+
+
+
+

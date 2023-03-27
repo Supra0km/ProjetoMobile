@@ -1,4 +1,4 @@
-import { Dispatch } from 'react';
+import { Dispatch, SetStateAction, useState } from "react";
 import {
   ScreenSlider1, ScreenSlider2, ScreenSlider3, ScreenSlider4
 } from "./src/screens"
@@ -19,6 +19,9 @@ export default function App() {
       break;
     case 4:
       return <ScreenSlider4 setPageI={setPage} />
+      break;
+    default:
+      return <ScreenSlider1 setPageI={setPage} />
       break;
   }
 }

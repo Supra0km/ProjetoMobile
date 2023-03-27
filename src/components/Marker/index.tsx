@@ -3,6 +3,6 @@ import { styles } from './styles'
 
 export function Marker() {
     return (
-        <View style={styles.ball} />
+        <View style = {styles.ball} />
     )
 }

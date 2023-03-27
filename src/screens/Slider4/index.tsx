@@ -4,17 +4,18 @@ import {
     ComponentButtonSlider, ComponentListMarker, ComponentTitleSlider
 } from '../../components';
 import { styles } from './styles';
-export function Slider1({ setPageI }: IPage) {
+export function Slider4({ setPageI }: IPage) {
     const slide1 = require("../../assets/slide1.png")
     const slide1Texts = [
-        { id: '1', text: 'Square Hammer'},
-        { id: '2', text: 'Mary On A cross'},
-        { id: '3', text: 'Mummy Dust'},
+        { id: '1', text: 'Papa Emeritus I – vocais (2008–2012)'},
+        { id: '2', text: 'Papa Emeritus II – vocais (2012–2014)'},
+        { id: '3', text: 'Papa Emeritus III – vocais (2015–2017)'},
+        { id: '4', text: 'Papa Emeritus Zero/Papa Nihil – (por volta do final dos anos 60)'},
     ]
     return (
         <ImageBackground source={slide1} style={styles.container} >
             <View style={styles.panel}>
-                <ComponentTitleSlider titleI='Top 3 músicas:' />
+                <ComponentTitleSlider titleI='Papas:' />
                 <FlatList
                     data={slide1Texts}
                     renderItem={({ item }) =>
