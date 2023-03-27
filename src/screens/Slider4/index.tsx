@@ -25,10 +25,10 @@ export function Slider4({ setPageI }: IPage) {
                 />
             </View>
             <View style={styles.buttonSlider}>
-                <ComponentButtonSlider onPressI={() => setPageI(1)} />
-                <ComponentButtonSlider onPressI={() => setPageI(2)} />
-                <ComponentButtonSlider onPressI={() => setPageI(3)} />
-                <ComponentButtonSlider onPressI={() => setPageI(4)} />
+                <ComponentButtonSlider onPressI={() => setPageI(1)} cor={false}/>
+                <ComponentButtonSlider onPressI={() => setPageI(2)} cor={false}/>
+                <ComponentButtonSlider onPressI={() => setPageI(3)} cor={false}/>
+                <ComponentButtonSlider onPressI={() => setPageI(4)} cor={true}/>
             </View>
         </ImageBackground>
     );

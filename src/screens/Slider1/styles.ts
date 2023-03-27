@@ -16,4 +16,5 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-around',
         marginBottom: 20
     }
+    
 });
