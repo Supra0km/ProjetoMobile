@@ -17,5 +17,20 @@ export const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: 'space-around',
         marginBottom: 20
+    },
+    buttonEntrar: {
+        backgroundColor: colors.primary,
+        marginBottom: 30,
+        width: "90%",
+        marginLeft: "auto",
+        marginRight: "auto",
+        padding: 5,
+        borderRadius: 8
+    },
+    buttonEntrarText: {
+        textAlign: 'center',
+        color: colors.white,
+        fontWeight: 'bold',
+        fontSize: 20
     }
 });

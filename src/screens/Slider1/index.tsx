@@ -28,6 +28,7 @@ export function Slider1({ setPageI }: IPage) {
                 <ComponentButtonSlider onPressI={() => setPageI(2)} cor={false}/>
                 <ComponentButtonSlider onPressI={() => setPageI(3)} cor={false}/>
                 <ComponentButtonSlider onPressI={() => setPageI(4)} cor={false}/>
+                <ComponentButtonSlider onPressI={() => setPageI(5)} cor={false}/>
             </View>
         </ImageBackground>
     );
