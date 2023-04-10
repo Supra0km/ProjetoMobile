@@ -1,6 +1,6 @@
 import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
-import {ScreenLogin} from "../screens"
+import {ScreenCadastrar, ScreenLogin} from "../screens"
 
 const Stack = createStackNavigator();
 
@@ -9,6 +9,7 @@ export function LoginNavigation() {
     <Stack.Navigator>
 
       <Stack.Screen name="Login" component={ScreenLogin} />
+      <Stack.Screen name="Cadastre-se" component={ScreenCadastrar} />
 
     </Stack.Navigator>
   );
