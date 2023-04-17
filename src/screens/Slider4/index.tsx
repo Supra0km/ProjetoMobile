@@ -3,7 +3,6 @@ import { IPage } from '../../../App';
 import {
     ComponentButtonSlider, ComponentListMarker, ComponentTitleSlider } from '../../components';
 import { styles } from './styles';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 export function Slider4({ setPageI }: IPage) {
     const slide1 = require("../../assets/slide1.png")
     const slide1Texts = [
