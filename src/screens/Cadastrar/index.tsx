@@ -1,12 +1,14 @@
 import React from 'react';
 import { View, Text, KeyboardAvoidingView } from "react-native"
+import { ComponentButtonInterface } from '../../components';
 import { styles } from "./styles"
 import { MaterialIcons } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import { TextInput } from 'react-native-gesture-handler';
 import { colors } from '../../styles/colors';
+import { LoginTypes } from '../../navigations/login.navigation';
 
-export function Cadastrar() {
+export function Cadastrar({navigation}:LoginTypes) {
     return (
 
         <View style={styles.container}>
@@ -44,6 +46,14 @@ export function Cadastrar() {
                     style={styles.input}
                 />
                 </View>
+                <ComponentButtonInterface 
+                title="Salvar" 
+                type="primary" 
+                onPressI={()=> navigation.navigate('Cadastrar')} />
+                <ComponentButtonInterface 
+                title="Voltar" 
+                type="secondary" 
+                onPressI={()=> navigation.navigate('Login')} />
             </KeyboardAvoidingView>
 
             <Text>Insira seu e-mail e senha para se cadastrar...</Text>

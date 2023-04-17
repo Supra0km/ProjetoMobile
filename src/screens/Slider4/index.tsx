@@ -1,7 +1,7 @@
-import { FlatList, ImageBackground, View, Text } from 'react-native';
+import { FlatList, ImageBackground, View, } from 'react-native';
 import { IPage } from '../../../App';
 import {
-    ComponentButtonSlider, ComponentListMarker, ComponentTitleSlider, ComponentButtonInterface } from '../../components';
+    ComponentButtonSlider, ComponentListMarker, ComponentTitleSlider } from '../../components';
 import { styles } from './styles';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 export function Slider4({ setPageI }: IPage) {
@@ -13,7 +13,7 @@ export function Slider4({ setPageI }: IPage) {
         { id: '4', text: 'Papa Emeritus Zero/Papa Nihil – (por volta do final dos anos 60)'},
     ]
     return (
-        <View style={styles.container} >
+        <ImageBackground source={slide1} style={styles.container} >
             <View style={styles.panel}>
                 <ComponentTitleSlider titleI='Papas:' />
                 <FlatList
@@ -23,11 +23,6 @@ export function Slider4({ setPageI }: IPage) {
                     }
                     keyExtractor={(item) => item.id}
                 />
-                <TouchableOpacity style={styles.buttonEntrar} onPress={
-                    () => setPageI(5)
-                }>
-                    <Text style={styles.buttonEntrarText}> Entrar </Text>
-                </TouchableOpacity>
             </View>
             <View style={styles.buttonSlider}>
                 <ComponentButtonSlider onPressI={() => setPageI(1)} cor={false}/>
@@ -35,9 +30,8 @@ export function Slider4({ setPageI }: IPage) {
                 <ComponentButtonSlider onPressI={() => setPageI(3)} cor={false}/>
                 <ComponentButtonSlider onPressI={() => setPageI(4)} cor={true}/>
                 <ComponentButtonSlider onPressI={() => setPageI(5)} cor={false}/>
-                <ComponentButtonSlider onPressI={() => setPageI(6)} cor={false}/>
             </View>
-        </View>
+        </ImageBackground>
     );
 
 }
