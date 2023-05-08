@@ -49,7 +49,7 @@ export function Cadastrar({navigation}:LoginTypes) {
                 <ComponentButtonInterface 
                 title="Salvar" 
                 type="primary" 
-                onPressI={()=> navigation.navigate('Cadastrar')} />
+                onPressI={()=> navigation.navigate('Drawer')} />
                 <ComponentButtonInterface 
                 title="Voltar" 
                 type="secondary" 
