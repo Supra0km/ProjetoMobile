@@ -91,7 +91,7 @@ export  function LocationScreen() {
       <View style={styles.map}>
         <GooglePlacesAutocomplete
         styles={{container: styles.searchContainer,textInput: styles.searchInput}}
-        placeholder="para onde?"
+        placeholder="Para onde?"
         fetchDetails={true}
         GooglePlacesDetailsQuery= {{fields: "geometry"}}
         enablePoweredByContainer={false}

@@ -7,7 +7,7 @@ import { styles } from './styles';
 export function Slider1({ setPageI }: IPage) {
     const slide1 = require("../../assets/slide1.png")
     const slide1Texts = [
-        { id: '1', text: 'Square Hammer'},
+        { id: '1', text: 'Bruna Eu Te Amo ♥'},
         { id: '2', text: 'Mary On A cross'},
         { id: '3', text: 'Mummy Dust'},
     ]
