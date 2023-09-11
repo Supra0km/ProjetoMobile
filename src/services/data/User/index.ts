@@ -28,5 +28,8 @@ class UserData{
     login(data:IAuthenticate){
         return api.post<IUserLogin>('/Login', data)
     }
+    updateToken(token: string) {
+        return api.put('/user',{ token })
+    }
 }
 export default new UserData
