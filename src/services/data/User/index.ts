@@ -1,35 +1,34 @@
-import { api } from "../../api"
-export interface IRegister {
+import {api} from "../../api"
+export interface IRegister{
     name?: string
     email?: string
     password?: string
 }
-export interface IAuthenticate {
+export interface IAuthenticate{
     email?: string
     password?: string
 }
-export interface IUser {
+export interface IUser{
     id: number
-    name: string
-    email: string
+    name:string
+    email:string
 }
-export interface IUserLogin {
-    user: string
-    token: {
-        token: {
-        expired_at: string
+ export interface IUserLogin{
+    user: IUser
+    token:{
+        token: string
+        expires_at: string
     }
-}
-}
-class UserData{
-    register(data:IRegister) {
-        return api.post("/register", data)
+ }
+ class UserData {
+    register(data:IRegister){
+        return api.post('/register', data)
     }
     login(data:IAuthenticate){
-        return api.post<IUserLogin>('/Login', data)
+        return api.post<IUserLogin>('/login',data)
     }
-    updateToken(token: string) {
-        return api.put('/user',{ token })
+    updateToken(token:string){
+        return api.put('/user',{token})
     }
-}
-export default new UserData
+ }
+ export default new UserData()
